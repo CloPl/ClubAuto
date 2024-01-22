@@ -1,0 +1,451 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #FAB637;
+    --pink: #FF4848;
+    /*teinte particulière de rouge*/
+    --brown: #CC6119;
+    --grey: #ECEFF3;
+    --black: #232628;
+    --blue: #6C98E1;
+    /* box-sizing: border-box; */
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* @import url('https://fontawesome.com/icons/twitter?f=brands&s=solid');
+@import url('https://fontawesome.com/icons/facebook?f=brands&s=solid'); */
+
+/*Ici démarre la fueille de style de l'en-tête*/
+
+
+header {
+    position: static;
+}
+
+p {
+    padding-top: 40px;
+    justify-content: center;
+    text-align: left;
+    padding-right: 15%;
+    /*faire le paragraphe avec retour à la ligne automatique*/
+}
+
+
+.gestion {
+    color: #CC6119;
+}
+
+/*en tête noire*/
+.headContainer {
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.headContainer ul {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    vertical-align: middle;
+    padding-top: 1.5%;
+    margin-left: 8%;
+    padding-bottom: 2%;
+
+}
+
+.headContainer .title {
+    font-size: 100%;
+    padding-top: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    ;
+
+}
+
+.headContainer .align {
+    display: flex;
+
+}
+
+.headContainer .bloc-1 {
+    background-image: url(/ClubAutoImages/icone-adresse.png);
+    background-size: 35px;
+    padding-left: 40px;
+    /* background-position: 0 0; */
+    background-repeat: no-repeat;
+}
+
+.headContainer .bloc-2 {
+    background-image: url(/ClubAutoImages/icon-telephone.png);
+    background-size: 35px;
+    padding-left: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.headContainer .gestion {
+    color: var(--brown);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.headContainer .phoneNumber {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.headContainer .text {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.headContainer .bloc-4 img {
+    background-color: var(--white);
+    max-width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+/* button #menuToggle {
+    visibility: hidden;
+} */
+
+/*fin de la partie noire*/
+
+.mainNav {
+    background-color: var(--grey);
+    opacity: 0.8;
+    height: 55px;
+    color: var(--black);
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.mainNav ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-right: 120px;
+}
+
+.mainNav ul li a {
+    display: block;
+    min-width: 100px;
+    min-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.mainNav li a:link {
+    color: var(--black);
+}
+
+.mainNav li a:visited {
+    color: var(--black);
+}
+
+.mainNav li a:hover {
+    background-color: #CC6119;
+    color: var(--white);
+}
+
+
+/*fin du header*/
+
+figure img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    min-width: 100%;
+}
+
+figcaption {
+    /*titre du dessous*/
+    position: relative;
+    background-color: var(--black);
+    color: var(--white);
+    top: -135px;
+    z-index: 1;
+    padding-left: 15%;
+}
+
+figcaption h1 {
+    font-family: Montserrat, sans-serif;
+    padding: 43px;
+    padding-left: 170px;
+    /*à mettre en %*/
+
+}
+
+figcaption .title {
+    color: var(--brown);
+}
+
+main {
+    position: relative;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    padding-right: 100px;
+}
+
+.pageContent h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.articleLeft {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-left: 100px;
+    padding-bottom: 15px;
+}
+
+.articleRight {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+
+.listing {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.list {
+    line-height: 30px;
+}
+
+.listing ul li {
+    list-style-type: square;
+}
+
+/*fin de 1ère partie*/
+
+section img {
+    display: block;
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.case {
+    display: inline-flex;
+    position: relative;
+    opacity: 70%;
+    max-width: 70%;
+    padding-top: 15%;
+    padding-left: 30%;
+    /* justify-content: space-between; */
+}
+
+.case h2 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
+
+}
+
+.case p {
+    color: var(--white);
+    text-align: justify;
+}
+
+/*faire un espace entre les 2*/
+.yellowCard {
+    background-color: var(--yellow);
+    padding: 20px;
+}
+
+.redCard {
+    background-color: var(--pink);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+/*partie terminée*/
+article {
+    background-color: var(--black);
+    position: relative;
+    z-index: -2;
+    margin-top: 20%;
+    height: 100%;
+
+}
+
+article .title {
+    color: var(--white);
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+}
+
+article img {
+    display: inline;
+    position: relative;
+    margin-left: 70px;
+    max-width: 28%;
+}
+
+/*ok*/
+article .choice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article .marque {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    width: 90%;
+    padding-left: 15%;
+}
+
+article .auto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(65, 60, 60, 0.922);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.7em;
+}
+
+/*ok*/
+article .price {
+    background-color: var(--blue);
+    margin-left: 10%;
+    padding: 3%;
+    justify-self: right;
+}
+
+/*ok*/
+article .error {
+    text-decoration: line-through;
+    color: var(--black);
+    font-size: 0.8em;
+}
+
+
+.pageMiddle {
+    display: block;
+    position: relative;
+    padding-top: 10%;
+}
+
+/*ok ne pas toucher*/
+.why {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+/* ok ne pas de toucher*/
+.pageMiddle ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 8%;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+
+/*ne pas toucher*/
+.pageMiddle img {
+    margin: -5%;
+    width: 4%;
+}
+
+/*ne pas toucher*/
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2em;
+    width: 15%;
+    margin-left: 42%;
+}
+
+
+.orangeBloc {
+    position: absolute;
+    background-color: var(--yellow);
+    opacity: 70%;
+    padding: 2%;
+    margin: 10% 10%;
+    text-align: center;
+}
+
+.ventelocation {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    width: 35%;
+}
+
+.club {
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 50%;
+
+}
+
+.mainFooter ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 8%;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-top: 8%;
+}
+
+.mainFooter .blue {
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.mainFooter h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form {
+    max-width: 50%;
+    margin-top: 10%;
+}
+
+.mainFooter img {
+    width: 10%;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.bottomFooter {
+    padding-left: 40%;
+}

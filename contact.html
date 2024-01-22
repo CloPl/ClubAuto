@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+            <title>CLUB AUTO</title>
+                <link rel="style sheet" href="/CSS/CSS/normalize.css">
+                <link rel="stylesheet" href="/Formation/Projet fil rouge Auto C2/cb.css">
+                <link href="stylesheet" href="https://fonts.google.com/specimen/Montserrat?query=mont">
+                <link href="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=open+sans">
+    </head>
+    <body>
+        <header id="mainHeader"><!--ici est la barre noire-->
+            <div class="headContainer"><!--5 blocs-->      
+                <ul>
+                    <li class="title">
+                        <h1>CLUB AUTO</h1>
+                    </li>
+                    <li class="bloc-1">
+                        <span class="gestion">ADRESSE :</span>
+                        <br>
+                        AVENUE CHARLES DE GAULLES
+                        <br>
+                        75000 PARIS
+                    </li>
+                    <li class="bloc-2">
+                        <span class="gestion">TELEPHONE</span>
+                        <br>
+                        <span class="phoneNumber">01 23 45 67 89</span>
+                    </li>
+                    <li class="bloc-3">
+                        <span class="gestion">OUVERTURE :</span>
+                        <span class="text">Du lundi au samedi</span>
+                        <br>
+                        <span class="gestion">HORAIRES : </span>
+                        <span class="text">De 9h à 17h</span>
+                    </li>
+                    <li class="bloc-4-1">
+                            <img src="/bootstrap-icons-1.11.1/bootstrap-icons-1.11.1/facebook.svg" alt="icone facebook">
+                            <img src="/bootstrap-icons-1.11.1/bootstrap-icons-1.11.1/twitter.svg" alt="icone twitter">
+                    </li>
+                </ul>
+            </div>            
+            <nav class="mainNav"><!--Partie de navigation-->
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Vente</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="menuToggle"><img src="/bootstrap-icons-1.11.1/bootstrap-icons-1.11.1/list.svg" alt="hamburger"><!--icone hamburger pour navigation mobile--></button>
+            </nav> <!--Fin de la partie de navigation-->
+        </header>
+        <section id="pageContent">
+            <main>
+                <h1> Contactez-nous</h1>
+                <form id="frmContact" action="merci.html">
+                    <div>
+                        <div>
+                            <label for="fName">Prénom*</label>
+                            <input type="text" name="fName" id="fName" required autofocus placeholder="Entrez Votre prénom">
+                        </div>  
+                        <div>
+                            <label for="lName">Nom*</label>
+                            <input type="text" name="lName" id="lName" required autofocus placeholder="Entrez votre nom">
+                        </div>  
+                        <div>
+                            <label for="email">E-mail*</label>
+                            <input type="email" name="email" id="email" required autofocus placeholder="Entrez une adresse mail valide">
+                        </div> 
+                        <div>
+                            <label for="telephone">Télépgone</label>
+                            <input type="tel" name="tel" id="tel" required autofocus placeholder="Phone number">
+                        </div> 
+                    <div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </main>
+        </section>
+    </body>
+    <footer id="mainFooter">
+        <p><hr>Copyright &copy; Club Auto - Tous droits réservés</p>
+    </footer>
+</html>
